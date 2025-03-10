@@ -1,0 +1,215 @@
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff6f61, #f0f8ff);
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ff503f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    display: block;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #ff8566;
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for background color change */
+}
+
+/* Banner Text Styles */
+.banner h2 {
+    color: hsl(0, 100%, 100%);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+    transition: color 0.5s ease-in-out; /* Smooth transition for text color change */
+}
+
+/* Hover effect for banner */
+.banner:hover {
+    opacity: 0.8; /* Apply opacity effect on hover */
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Different banners for each page */
+.index-banner { 
+    background-image: url('banner-home.jpg');
+    background-color: rgba(255, 111, 97, 0.6); /* Light red overlay */
+}
+
+.about-banner { 
+    background-image: url('banner-about.jpg');
+    background-color: rgba(40, 40, 40, 0.6); /* Darker overlay for the About page */
+}
+
+.services-banner {
+    background-image: url('banner-services.jpg');
+    background-color: rgba(251, 251, 251, 0.797); /* Blue overlay for the Services page */
+}
+
+.gallery-banner { 
+    background-image: url('banner-gallery.jpg');
+    background-color: rgba(255, 203, 67, 0.6); /* Yellow overlay for the Gallery page */
+}
+
+.contact-banner { 
+    background-image: url('banner-contact.jpg');
+    background-color: rgba(34, 193, 195, 0.6); /* Green-blue overlay for the Contact page */
+}
+
+/* Specific font color for banner text */
+.about-banner h2, .about-banner p {
+    color: #ffffff; /* White text for About page */
+}
+
+.service-banner h2, .service-banner p {
+    color: #432626; /* Dark text for Services page */
+}
+
+.gallery-banner h2, .gallery-banner p {
+    color: #333; /* Dark text for Gallery page */
+}
+
+.contact-banner h2, .contact-banner p {
+    color: #222; /* Darker text for Contact page */
+}
+
+/* Section styling */
+section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services-section {
+    text-align: left;
+    padding: 50px;
+    color: #ff6f61;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Specific styles for service page */
+.services-list {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.services-list ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.services-list ul li {
+    margin: 15px 0;
+}
+
+.prices-table {
+    text-align: center;
+    margin-top: 30px;
+}
+
+table {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #ff6f61;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ffe0e0;
+}
+
+/* Different banners for each page */
+.index-banner { background-image: url('banner-home.jpeg'); }
+.about-banner { background-image: url('banner-about.jpeg'); }
+.gallery-banner { background-image: url('banner-gallery.jpg'); }
+.contact-banner { background-image: url('banner-contact.jpg'); }
